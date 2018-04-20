@@ -1,0 +1,169 @@
+/* Variabes */
+/* Mixin's */
+body {
+    background-image: url("../images/dark_geometric.png");
+    font-family: sans-serif;
+    color: rgb(45, 216, 193);
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .wrappper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrappper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .stickman {
+    margin-left: 28.5%;
+    width: 40%;
+    margin-right: 30%;
+    color: rgb(10, 8, 8);
+    border: rgb(13, 57, 97) double 5px;
+    padding: 15px;
+    height: auto;
+  }
+  #stickfight {
+      width: 100%;
+      height: auto;
+  }
+  h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+  
+  .logo {
+      width: 40%;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+  }
+  
+  p {
+    font-size: 1.6em;
+  }
+  
+  #alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 1014px;
+  }
+  #alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 25px;
+    height: 20px;
+    padding-top: 10px;
+    background: rgb(37, 89, 102);
+    color: #070808;
+    font-size: 18px;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: solid 2px rgb(24, 21, 21);
+  }
+  #alphabet li:hover {
+    background: #15ca42;
+    border: solid 2px #fff;
+    color: rgb(20, 14, 14);
+  }
+  
+  #my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+  }
+  
+  .active {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default;
+  }
+  .active:hover {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  
+  #mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+  }
+  
+  button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: rgb(37, 89, 102);
+    color: #07090a;
+    border: solid 2px rgb(12, 8, 8);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+  }
+  button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #13dd46;
+    border: solid 2px rgb(5, 3, 3);
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    #alphabet {
+      padding: 0 0 0 15px;
+    }
+  }
+  @media (max-width: 480px) {
+    #alphabet {
+      padding: 0 0 0 25px;
+    }
+  }
+  
+  @media screen and (max-width: 594px) {
+      #stickman {
+          margin-left: 27%;
+      }
+  }
