@@ -81,20 +81,19 @@ window.onload = function () {
       }
     }
   };
-
-  //if lose.. ""PLEASE PROVIDE FEEDBACK ON WHY THIS DOESNT WORK!!""
-
-  var stickFight = document.getElementById("gifstuff")
-
-
-  if (lives === 0) {
-    stickFight.innerHTML = "<img src='../images / lose.gif '/>";
+  var stickFight = document.getElementById("stickfight")
+  //if lose..
+  winlose = function () {
+    if (lives < 1) {
+      stickFight.setAttribute("src", 'assets/images/lose.gif');
+    };
+    //if win!
+    for (var i = 0; i < geusses.length; i++) {
+      if (counter + space === geusses.length) {
+        stickFight.setAttribute("src", "assets/images/stickrun.gif");
+      }
+    }
   };
-  //if win! ""THIS IS ANOTHER METHOD THAT DOES NOT WORK!""
-  if (lives >= 0 && (counter + space === guesses.length)) {
-    stickFight.setAttribute("src", "../images/stickrun.gif");
-  }
-
 
 
   // OnClick Function
@@ -113,8 +112,10 @@ window.onload = function () {
       if (j === -1) {
         lives -= 1;
         comments();
+        winlose();
       } else {
         comments();
+        winlose();
       }
     }
   }
@@ -133,7 +134,7 @@ window.onload = function () {
     word = word.replace(/\s/g, "-");
     console.log(word);
     buttons();
-
+    stickFight.setAttribute("src", "assets/images/stickfight.gif");
     geusses = [];
     lives = 10;
     counter = 0;
